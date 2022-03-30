@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  flex-direction: column;
+}
+
+.weather-card{
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-card-content{
+  font-family: "Montserrat" !important;
+}
+
+.app-name{
+  font-size: 21px;
+}
