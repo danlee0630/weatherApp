@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
 
 .main {
-  height: 100vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat";
   flex-direction: column;
+  font-family: "Montserrat" !important;
 }
 
 .weather-card{
@@ -18,6 +18,34 @@
   font-family: "Montserrat" !important;
 }
 
-.app-name{
-  font-size: 21px;
+.weatherIcon{
+  position: relative;
+  right: -90px;
 }
+.app-name{
+  font-size: 35px;
+  font-family:Poppins;
+  font-weight: 600;
+  color: aquamarine;
+}
+
+.forecast-main{
+  display: flex;
+  flex-direction: row;
+  max-width: max-content;
+  min-width: min-content;
+  
+}
+.forecast-card{
+  display: flex;
+  justify-content: space-between;
+  
+}
+/* .fMain{
+  
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 16rem;
+} */

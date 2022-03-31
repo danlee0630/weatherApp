@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function header(){
+export default function header() {
     return (
         <div class="app-name">
-            React Weather App
+             Weather Lens
         </div>
-  );
+    );
 }
