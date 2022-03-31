@@ -3,7 +3,7 @@ import React from "react";
 export default function header() {
     return (
         <div class="app-name">
-             Weather Lens
+            Weather Lens
         </div>
     );
 }

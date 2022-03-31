@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:wght@200&display=swap');
 
 .main {
-  height: 150vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Montserrat" !important;
 }
 
 .weather-card{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -20,11 +20,12 @@
 
 .weatherIcon{
   position: relative;
-  right: -90px;
+  right: -120px;
 }
+
 .app-name{
   font-size: 35px;
-  font-family:Poppins;
+  font-family: "Poppins" !important;
   font-weight: 600;
   color: aquamarine;
 }
@@ -32,15 +33,27 @@
 .forecast-main{
   display: flex;
   flex-direction: row;
-  max-width: max-content;
-  min-width: min-content;
-  
 }
+
 .forecast-card{
   display: flex;
   justify-content: space-between;
-  
+  font-family: "Montserrat" !important;
 }
+
+.forecast-card-content{
+  justify-content: space-between;
+  font-family: "Montserrat" !important;
+}
+
+.forecast-card-description{
+  text-transform: capitalize;
+  justify-content: space-between;  
+}
+
+/* .forecast-card-title{
+ fon
+} */
 /* .fMain{
   
   margin-right: 5px;

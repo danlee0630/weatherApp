@@ -23,7 +23,7 @@ function App() {
   const [city, setCity] = useState('');
   const [weatherIcon, setWeatherIcon] = useState('');
   const [forecast, setForecast] = useState([]);
-  const [forecastIcon, setForecastIcon] = useState('');
+  const [forecastIcon, setForecastIcon] = useState([]);
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -44,7 +44,6 @@ function App() {
         setWeatherIcon(apiData.data.current.weather[0].main)
         setForecast(apiData.data.daily)
         setForecastIcon(apiData.data.daily[0].weather[0].main)
-
       })
   }, [latitude, longitude])
 
@@ -61,7 +60,7 @@ function App() {
         feels_like={feels_like}
         weatherIcon={weatherIcon}
       />
-      <Forecast 
+      <Forecast
         forecast={forecast}
         forecastIcon={forecastIcon}
       />

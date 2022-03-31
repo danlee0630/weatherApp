@@ -2,9 +2,9 @@ import React from "react";
 import Card from 'react-bootstrap/Card'
 import moment from 'moment';
 import {
-  WiSunrise, WiSunset, WiHumidity, WiThermometerExterior, WiThermometer
+  WiSunrise, WiSunset, WiHumidity, WiThermometer, WiStrongWind
 } from "react-icons/wi";
-import { BsClouds, BsCloudDrizzle, BsCloudRain, BsWind, BsCloudSnow, BsCloudHaze1 } from "react-icons/bs";
+import { BsClouds, BsCloudDrizzle, BsCloudRain, BsCloudSnow, BsCloudHaze1 } from "react-icons/bs";
 import { IoBody, IoThunderstormOutline, IoSunnyOutline } from "react-icons/io5";
 
 export default function WeatherCard({ temperture, feels_like, wind_speed, humidity, sunset, sunrise, city, weatherIcon }) {
@@ -62,7 +62,7 @@ export default function WeatherCard({ temperture, feels_like, wind_speed, humidi
 
   return (
     <div>
-      <Card border="dark" style={{ width: '16rem' }}>
+      <Card border="dark" style={{ width: '20rem' }}>
         <Card.Header className="weather-card-header">{city}</Card.Header>
         <Card.Body>
           <Card.Text>
@@ -70,7 +70,7 @@ export default function WeatherCard({ temperture, feels_like, wind_speed, humidi
             <div class="weatherIcon">{showWeatherIcon}</div>
             <div className="weather-card">
               <div className="weather-card-content">
-                <WiThermometerExterior size="20px" color="blue" />{Math.round(temperture)}&deg;C
+                <WiThermometer size="20px" color="blue" />{Math.round(temperture)}&deg;C
               </div>
               <div className="weather-card-content">
                 <IoBody size="15px" color="blue" /><WiThermometer size="20px" color="blue" /> {Math.round(feels_like)}&deg;C
@@ -78,7 +78,7 @@ export default function WeatherCard({ temperture, feels_like, wind_speed, humidi
             </div>
             <div className="weather-card">
               <div className="weather-card-content">
-                <BsWind size="15px" color="blue" /> {wind_speed} m/s
+                <WiStrongWind size="20px" color="green" /> {wind_speed} m/s
               </div>
               <div className="weather-card-content">
                 <WiHumidity size="20px" color="blue" />{humidity}%
