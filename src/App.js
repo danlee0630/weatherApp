@@ -20,6 +20,7 @@ function App() {
   const [humidity, setHumidity] = useState(null);
   const [sunrise, setSunrise] = useState(null);
   const [sunset, setSunset] = useState(null);
+  const [alertEvent, setAlertEvent] = useState(null);
   const [city, setCity] = useState('');
   const [weatherIcon, setWeatherIcon] = useState('');
   const [forecast, setForecast] = useState([]);
@@ -40,8 +41,10 @@ function App() {
         setHumidity(apiData.data.current.humidity)
         setSunrise(apiData.data.current.sunrise)
         setSunset(apiData.data.current.sunset)
+        setAlertEvent(apiData.data.alerts[0].event)
         setCity(apiData.data.timezone)
         setWeatherIcon(apiData.data.current.weather[0].main)
+
         setForecast(apiData.data.daily)
         setForecastIcon(apiData.data.daily[0].weather[0].main)
       })
@@ -57,12 +60,12 @@ function App() {
         humidity={humidity}
         sunset={sunset}
         sunrise={sunrise}
+        alertEvent={alertEvent}
         feels_like={feels_like}
         weatherIcon={weatherIcon}
       />
       <Forecast
         forecast={forecast}
-        forecastIcon={forecastIcon}
       />
     </div>
   );

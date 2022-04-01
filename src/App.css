@@ -1,64 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:wght@200&display=swap');
 
 .main {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.weather-card{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
-.weather-card-content{
+
+.weather-card-header {
   font-family: "Montserrat" !important;
 }
 
-.weatherIcon{
+h6 {
+  font-family: "Montserrat" !important;
+}
+
+h5 {
+  font-family: "Montserrat" !important;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.WCard {
+  border-top-color: red;
+}
+
+.weather-card-content {
+  font-family: "Montserrat" !important;
+}
+
+.weatherIcon {
   position: relative;
   right: -120px;
 }
 
-.app-name{
+.weather-alerts-title {
+  font-family: "Montserrat" !important;
+  color: red;
+  font-weight: 1000;
+}
+
+.weather-card-alerts {
+  font-family: "Montserrat" !important;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 1000;
+  animation: fading 5s infinite
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.app-name {
   font-size: 35px;
   font-family: "Poppins" !important;
   font-weight: 600;
   color: aquamarine;
 }
 
-.forecast-main{
+.forecast-main {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.forecast-card{
+.forecast-card {
   display: flex;
   justify-content: space-between;
   font-family: "Montserrat" !important;
 }
 
-.forecast-card-content{
+.forecast-card-content {
   justify-content: space-between;
   font-family: "Montserrat" !important;
 }
 
-.forecast-card-description{
+.forecast-card-description {
   text-transform: capitalize;
-  justify-content: space-between;  
+  justify-content: space-between;
+  font-family: "Montserrat" !important;
 }
 
-/* .forecast-card-title{
- fon
-} */
-/* .fMain{
-  
-  margin-right: 5px;
+.fMain {
+  /* margin-right: 5px;
   margin-top: 10px;
   margin-left: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
   width: 16rem;
-} */
+  /* border-top-color: orange;
+  border-top-width: 2px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px; */
+  border-style: outset;
+  justify-content: center;
+
+}
